@@ -17,6 +17,8 @@ public interface Beholder<T> extends Iterable<T> {
 
     public Iterator<T> iterator();     // returnerer en iterator
 
+
+
     default boolean fjernHvis(Predicate<? super T> p)  // betingelsesfjerning
     {
         Objects.requireNonNull(p);                       // kaster unntak
